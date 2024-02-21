@@ -74,7 +74,7 @@ const About = () => {
                     <div className='info-card'>
                         <h5>Embry-Riddle Aeronautical University</h5>
                         <p>2012 - 2014</p>
-                        <p>Private Pilots License</p>
+                        <p>Private Pilot License</p>
                     </div>
                 </section>
 
