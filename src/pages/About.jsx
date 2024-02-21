@@ -49,6 +49,7 @@ const About = () => {
                         <span>Javascript</span>
                         <span>HTML</span>
                         <span>CSS</span>
+                        <span>MongoDB</span>
                         <span>Wordpress</span>
                         <span>Elementor</span>
                         <span>Divi</span>
