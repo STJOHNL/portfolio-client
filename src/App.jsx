@@ -7,12 +7,15 @@ import Layout from './layouts/Layout'
 
 // Pages
 import Login from './pages/Login'
-import Welcome from './pages/Welcome'
+import Home from './pages/Home'
 import Admin from './pages/Admin'
 import Register from './pages/Register'
 import NotFound from './pages/NotFound'
 import ResetPassword from './pages/ResetPassword'
 import ForgotPassword from './pages/ForgotPassword'
+import About from './pages/About'
+import Projects from './pages/Projects'
+import Contact from './pages/Contact'
 
 
 function App() {
@@ -26,12 +29,28 @@ function App() {
       >
         <Route
           index
-          element={<Login />}
+          element={<Home />}
         />
         <Route
+          path='/about'
+          element={<About />}
+        />
+        <Route
+          path='/projects'
+          element={<Projects />}
+        />
+        <Route
+          path='/contact'
+          element={<Contact />}
+        />
+        <Route
+          path='/login'
+          element={<Login />}
+        />
+        {/* <Route
           path='/register'
           element={<Register />}
-        />
+        /> */}
         <Route
           path='/forgot-password'
           element={<ForgotPassword />}
@@ -43,23 +62,23 @@ function App() {
 
         {/* Private Routes */}
         <Route
-          path='/welcome'
+          path='/admin'
           element={
             <PrivateRoute>
-              <Welcome />
+              <Admin />
             </PrivateRoute>
           }
         />
 
         {/* Admin Routes */}
-        <Route
+        {/* <Route
           path='/admin'
           element={
             <AdminRoute>
               <Admin />
             </AdminRoute>
           }
-        />
+        /> */}
 
         {/* Catch all */}
         <Route
