@@ -306,6 +306,8 @@ footer form {
 
 footer form textarea {
     height: 79%;
+    font-family: 'Poppins';
+    font-weight: 400;
 }
 
 footer form button {
